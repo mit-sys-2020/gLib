@@ -941,7 +941,7 @@ Public Class gLib
     End Sub
 End Class
 
-
+' 点データクラス
 Public Class gPoint
     Public x As Double
     Public y As Double
@@ -962,9 +962,9 @@ Public Class gPoint
     Public Shared Operator +(ByVal a As gPoint, ByVal b As gPoint) As gPoint
         Return New gPoint(a.x + b.x, a.y + b.y)
     End Operator
-
 End Class
 
+' 直線データクラス
 Public Class gLine
     Public sp As gPoint
     Public ep As gPoint
